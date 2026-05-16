@@ -19,3 +19,6 @@ Before deploying this script, ensure your environment meets the following condit
 - A working Proxmox VE or Debian/Ubuntu-based host.
 - At least two target network devices assigned Static IPs that sit outside your UPS power backup loop (e.g., your primary ISP gateway and an auxiliary network switch).
 - Root or sudo privileges on the host machine.
+
+### Warning
+- You should absolutely let Proxmox handle the VM shutdown in sequence. 

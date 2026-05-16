@@ -2,8 +2,8 @@
 *A poorman's UPS signaling system*
 
 ### What does it do?
-The script pings two network devices that are ideally not connected to a backup power supply like a UPS,
-Issue a shutdown command to Proxmox when two network devices are unreachable for longer than the threshold.
+- The script pings two network devices that are ideally not connected to a backup power supply like a UPS,
+- Issue a shutdown command to Proxmox when two network devices are unreachable for longer than the threshold.
 
 ### What does it solve?
 - Data Corruption Mitigation: Prevents dirty power cycles that corrupt core databases (such as Active Directory's ntds.dit).

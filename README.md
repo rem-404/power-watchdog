@@ -1,4 +1,4 @@
-# Power Management Watchdog
+# Power Watchdog
 *A poorman's UPS signaling system*
 
 ## What does it do?
@@ -34,14 +34,14 @@ Before deploying this script, ensure your environment meets the following condit
 
 ```bash
 # Create systemd service
-nano /etc/systemd/system/power-watch.service
+nano /etc/systemd/system/power-watchdog.service
 
 [Unit]
 Description=Power Loss Detection Script
 After=network.target
 
 [Service]
-ExecStart=/usr/local/bin/power-watch.sh
+ExecStart=/usr/local/bin/power-watchdog.sh
 Restart=always
 
 [Install]
@@ -51,12 +51,12 @@ WantedBy=multi-user.target
 # Enable
 systemctl daemon-reexec
 systemctl daemon-reload
-systemctl enable power-watch
-systemctl start power-watch
+systemctl enable power-watchdog
+systemctl start power-watchdog
 
 # Check Status
-systemctl status power-watch
+systemctl status power-watchdog
 
 # Verification
-systemctl is-enabled power-watch
+systemctl is-enabled power-watchdog
 ```

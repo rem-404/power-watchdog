@@ -14,7 +14,7 @@
 Home lab enthusiasts or small business environments running a headless Proxmox VE or 
 Linux server attached to an unmanaged ("dumb") UPS that lacks a native USB/network signaling interface.
 
-### Prerequisites
+### Requirements
 Before deploying this script, ensure your environment meets the following conditions:
 - A working Proxmox VE or Debian/Ubuntu-based host.
 - At least two target network devices assigned Static IPs that sit outside your UPS power backup loop (e.g., your primary ISP gateway and an auxiliary network switch).

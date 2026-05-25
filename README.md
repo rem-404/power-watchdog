@@ -1,5 +1,5 @@
 # Power Watchdog
-*A poorman's UPS signaling system*
+*This script is for a lab environment and meant for learning purposes only*
 
 ## What does it do?
 - The script pings two network devices that are ideally not connected to a backup power supply like a UPS,
